@@ -68,22 +68,28 @@ python3.9 RAG.py
 Since our testing is in local computer, we set the dataset size to 1000 to see whether the algorithm work or not. We can change the dataset size accordingly. Besides, in our code, only last two layers is tuning. You can change it also.
 
 change the train_size, val_size in FT.py
+```bash
     def load_and_process_data(
         self,
         dataset_name: str,
         train_size: int = 1000,
         val_size: int = 200
     ) -> Tuple[Dataset, Dataset]:
+```
 
 change the sample_size in RAG.py
+```bash
     def load_data(self, sample_size: int = 1000) -> Dataset:
+```
 
 change the number of layers in FT.py
+```bash
     def def setup_training(self) -> None:
     ...
         for layer in self.model.layers[:-2]:
             layer.trainable = False
     ...
+```
 
 ## 📝 Citation
 
