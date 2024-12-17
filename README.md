@@ -64,6 +64,20 @@ python3.9 FT.py
 python3.9 RAG.py
 ```
 
+### parameters
+Since our testing is in local computer, we set the dataset size to 1000 to see whether the algorithm work or not. We can change the dataset size accordingly.
+
+change the train_size, val_size in FT.py
+    def load_and_process_data(
+        self,
+        dataset_name: str,
+        train_size: int = 1000,
+        val_size: int = 200
+    ) -> Tuple[Dataset, Dataset]:
+
+change the sample_size in RAG.py
+    def load_data(self, sample_size: int = 1000) -> Dataset:
+
 ## 📝 Citation
 
 ```bibtex
