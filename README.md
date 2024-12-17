@@ -56,7 +56,7 @@ python3.9 RAG.py
 # Example usage of fine-tuning script
 python3.9 FT.py
 ```
-[Screenshot](./images/train.png)
+![Screenshot](./images/train.png)
 
 ### RAG Implementation (RAG.py)
 ```python
